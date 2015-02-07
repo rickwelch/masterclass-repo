@@ -1,0 +1,16 @@
+{
+    "name": "root/masterclass-repo",
+    "description": "Initial",
+    "require": {
+        "aura/di": "dev-master",
+        "phpunit/phpunit": "~4.7@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Welch",
+            "email": "rick_welch@me.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
