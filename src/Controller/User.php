@@ -73,7 +73,7 @@ class User {
             </form>
         ';
         
-        require_once 'layout.phtml';
+        require_once '../layout.phtml';
         
     }
     
@@ -118,7 +118,7 @@ class User {
             <input type="submit" name="updatepw" value="Create User" />
         </form>';
         
-        require_once 'layout.phtml';
+        require_once '../layout.phtml';
     }
     
     public function login() {
@@ -153,7 +153,7 @@ class User {
             </form>
         ';
         
-        require_once('layout.phtml');
+        require_once('../layout.phtml');
         
     }
     
