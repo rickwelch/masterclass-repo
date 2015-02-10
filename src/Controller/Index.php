@@ -1,9 +1,13 @@
 <?php
- 
+
+namespace Masterclass\Controller;
+
+use PDO;
+
 class Index {
-    
-    protected $db;
-    
+
+  protected $db;
+      
     public function __construct($config) {
         $dbconfig = $config['database'];
         $dsn = 'mysql:host=' . $dbconfig['host'] . ';dbname=' . $dbconfig['name'];
@@ -35,8 +39,7 @@ class Index {
         }
         
         $content .= '</ol>';
-        
-        require 'layout.phtml';
+        require  '../layout.phtml';
     }
 }
 
