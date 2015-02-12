@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51c4083d-649d-401e-9cab-4644fdf5f133" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/diconfig.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config.php-init" afterPath="$PROJECT_DIR$/config/config.php-init" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Comment.php" afterPath="$PROJECT_DIR$/src/Controller/Comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Comment.php" afterPath="$PROJECT_DIR$/src/Model/Comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Index.php" afterPath="$PROJECT_DIR$/src/Controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontController/MasterController.php" afterPath="$PROJECT_DIR$/src/FrontController/MasterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Story.php" afterPath="$PROJECT_DIR$/src/Controller/Story.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Story.php" afterPath="$PROJECT_DIR$/src/Model/Story.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/User.php" afterPath="$PROJECT_DIR$/src/Controller/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/diconfig.php" afterPath="$PROJECT_DIR$/config/diconfig.php" />
     </list>
     <ignored path="masterclass-repo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +41,8 @@
       <file leaf-file-name="diconfig.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/diconfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6350195" vertical-offset="0" max-vertical-offset="1285">
-              <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.6081081" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
               </folding>
@@ -111,16 +101,16 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-101.34615" vertical-offset="0" max-vertical-offset="2890">
-              <caret line="155" column="25" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
+            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2907">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
-                <marker date="1423528832043" expanded="true" signature="1283:1320" placeholder="SELECT * FRO..user..." />
-                <marker date="1423528832043" expanded="true" signature="1903:1964" placeholder="INSERT INTO ..." />
-                <marker date="1423528832043" expanded="true" signature="2246:2763" placeholder="..." />
-                <marker date="1423528832043" expanded="true" signature="3381:3428" placeholder="UPDATE user ..." />
-                <marker date="1423528832043" expanded="true" signature="3778:3815" placeholder="SELECT * FRO..user..." />
-                <marker date="1423528832043" expanded="true" signature="4903:4965" placeholder="SELECT * FRO..user..." />
-                <marker date="1423528832043" expanded="true" signature="5558:5853" placeholder="..." />
+                <marker date="1423705656377" expanded="true" signature="1327:1364" placeholder="SELECT * FRO..user..." />
+                <marker date="1423705656377" expanded="true" signature="1947:2008" placeholder="INSERT INTO ..." />
+                <marker date="1423705656377" expanded="true" signature="2290:2807" placeholder="..." />
+                <marker date="1423705656377" expanded="true" signature="3425:3472" placeholder="UPDATE user ..." />
+                <marker date="1423705656377" expanded="true" signature="3822:3859" placeholder="SELECT * FRO..user..." />
+                <marker date="1423705656377" expanded="true" signature="4947:5009" placeholder="SELECT * FRO..user..." />
+                <marker date="1423705656377" expanded="true" signature="5602:5897" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -170,7 +160,6 @@
         <option value="$PROJECT_DIR$/config.php-init" />
         <option value="$PROJECT_DIR$/layout.phtml" />
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/src/Controller/User.php" />
         <option value="$PROJECT_DIR$/diconfig.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -180,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/Model/Comment.php" />
         <option value="$PROJECT_DIR$/src/Model/Story.php" />
         <option value="$PROJECT_DIR$/src/FrontController/MasterController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/User.php" />
         <option value="$PROJECT_DIR$/config/diconfig.php" />
       </list>
     </option>
@@ -650,24 +640,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-101.34615" vertical-offset="0" max-vertical-offset="2890">
-          <caret line="155" column="25" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <marker date="1423528832043" expanded="true" signature="1283:1320" placeholder="SELECT * FRO..user..." />
-            <marker date="1423528832043" expanded="true" signature="1903:1964" placeholder="INSERT INTO ..." />
-            <marker date="1423528832043" expanded="true" signature="2246:2763" placeholder="..." />
-            <marker date="1423528832043" expanded="true" signature="3381:3428" placeholder="UPDATE user ..." />
-            <marker date="1423528832043" expanded="true" signature="3778:3815" placeholder="SELECT * FRO..user..." />
-            <marker date="1423528832043" expanded="true" signature="4903:4965" placeholder="SELECT * FRO..user..." />
-            <marker date="1423528832043" expanded="true" signature="5558:5853" placeholder="..." />
+            <marker date="1423705656377" expanded="true" signature="1327:1364" placeholder="SELECT * FRO..user..." />
+            <marker date="1423705656377" expanded="true" signature="1947:2008" placeholder="INSERT INTO ..." />
+            <marker date="1423705656377" expanded="true" signature="2290:2807" placeholder="..." />
+            <marker date="1423705656377" expanded="true" signature="3425:3472" placeholder="UPDATE user ..." />
+            <marker date="1423705656377" expanded="true" signature="3822:3859" placeholder="SELECT * FRO..user..." />
+            <marker date="1423705656377" expanded="true" signature="4947:5009" placeholder="SELECT * FRO..user..." />
+            <marker date="1423705656377" expanded="true" signature="5602:5897" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/diconfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6350195" vertical-offset="0" max-vertical-offset="1285">
-          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.6081081" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>

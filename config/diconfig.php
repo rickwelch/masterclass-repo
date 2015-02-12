@@ -42,8 +42,7 @@ $di->params['Masterclass\Model\Story'] = [
 $di->params['Masterclass\Model\Index'] = [
   'storyModel' => $di->lazyNew('Masterclass\Model\Story'),
 ];
-/*
-$di->params['Masterclass\Model\User'] = [
+
+$di->params['Masterclass\Controller\User'] = [
   'config' => $config,
 ];
-*/
