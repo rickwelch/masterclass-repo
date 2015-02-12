@@ -9,12 +9,10 @@ class Story {
 
   protected $storyModel;
   protected $commentModel;
-  protected $config;
-    
-    public function __construct($config) {
-      $this->config = $config;
-      $this->storyModel = new StoryModel($this->config);
-      $this->commentModel = new Comment($this->config);
+
+    public function __construct(StoryModel $story, Comment $comment) {
+      $this->storyModel = $story;
+      $this->commentModel = $comment;
     }
     
     public function index() {

@@ -2,7 +2,7 @@
     "name": "root/masterclass-repo",
     "description": "Initial",
     "require": {
-        "aura/di": "dev-master",
+        "aura/di": "~2.1",
         "phpunit/phpunit": "~4.7@dev"
     },
     "autoload": {

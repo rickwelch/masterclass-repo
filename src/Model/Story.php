@@ -17,13 +17,10 @@ class Story {
   /**
    * Class Constructor.
    *
-   * @param $config
+   * @param PDO $pdo
    */
-  public function __construct($config){
-    $dbconfig = $config['database'];
-    $dsn = 'mysql:host=' . $dbconfig['host'] . ';dbname=' . $dbconfig['name'];
-    $this->db = new PDO($dsn, $dbconfig['user'], $dbconfig['pass']);
-    $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  public function __construct(PDO $pdo){
+    $this->db = $pdo;
   }
 
   /**

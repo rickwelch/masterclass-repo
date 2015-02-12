@@ -2,16 +2,11 @@
 
 session_start();
 
-$config = require_once('../config.php');
-//require_once '../MasterController.php';
+$config = require_once('../config/config.php');
 require_once '../vendor/autoload.php';
-/*
-require_once '../Comment.php';
-require_once '../User.php';
-require_once '../Story.php';
-require_once '../Index.php';
+require_once('../config/diconfig.php');
 
-$framework = new MasterController($config);
-*/
-$framework = new \Masterclass\FrontController\MasterController($config);
+//$framework = new \Masterclass\FrontController\MasterController($config);
+
+$framework = $di->newInstance('Masterclass\FrontController\MasterController');
 echo $framework->execute();

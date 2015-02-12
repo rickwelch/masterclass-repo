@@ -7,12 +7,10 @@ use Masterclass\Model\Story;
 class Index {
 
   protected $db;
-  protected $config;
   protected $storyModel;
 
-  public function __construct($config) {
-    $this->config = $config;
-    $this->storyModel = new Story($config);
+  public function __construct(Story $story) {
+    $this->storyModel = $story;
   }
 
   public function index() {
