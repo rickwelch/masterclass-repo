@@ -8,6 +8,7 @@
 
 namespace Masterclass\Model;
 
+use Masterclass\Dbal\AbstractDb;
 use PDO;
 
 class Story {
@@ -19,8 +20,8 @@ class Story {
    *
    * @param PDO $pdo
    */
-  public function __construct(PDO $pdo){
-    $this->db = $pdo;
+  public function __construct(AbstractDb $db){
+    $this->db = $db;
   }
 
   /**
@@ -31,16 +32,13 @@ class Story {
   public function getStoryList()
   {
     $sql = 'SELECT * FROM story ORDER BY created_on DESC';
-    $stmt = $this->db->prepare($sql);
-    $stmt->execute();
-    $stories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stories = $this->db->fetchAll($sql);
+
     foreach ($stories as $key => $story)
     {
       $comment_sql = 'SELECT COUNT(*) as `count` FROM comment WHERE story_id = ?';
-      $comment_stmt = $this->db->prepare($comment_sql);
-      $comment_stmt->execute(array($story['id']));
-      $row = $comment_stmt->fetch(PDO::FETCH_ASSOC);
-      $stories[$key]['count'] = $row['count'];
+      $count = $this->db->fetchOne($comment_sql,[$story['id']]);
+      $stories[$key]['count'] = $count['count'];
     }
     return $stories;
   }
@@ -53,9 +51,7 @@ class Story {
    */
   public function getStory($story_id){
     $story_sql = 'SELECT * FROM story WHERE id = ?';
-    $story_stmt = $this->db->prepare($story_sql);
-    $story_stmt->execute(array($story_id));
-    return $story_stmt->fetch(PDO::FETCH_ASSOC);
+    return $this->db->fetchOne($story_sql, [$story_id]);
   }
 
   /**
@@ -68,8 +64,7 @@ class Story {
    */
   public function createNewsStory($headline, $url, $username){
     $sql = 'INSERT INTO story (headline, url, created_by, created_on) VALUES (?, ?, ?, NOW())';
-    $stmt = $this->db->prepare($sql);
-    $stmt->execute(array(
+    $this->db->execute($sql, array(
       $headline,
       $url,
       $username,

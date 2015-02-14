@@ -72,13 +72,13 @@ class Story {
       } else {
         $id = $this->storyModel->createNewsStory($_POSST['headline'],$_POST['url'], $_SESSION['username']);
 
-        header("Location: /story/?id=$id");
+        header("Location: /story?id=$id");
         exit;
       }
     }
 
     $content = '
-            <form method="post">
+            <form method="post" action="/story/create/save">
                 ' . $error . '<br />
         
                 <label>Headline:</label> <input type="text" name="headline" value="" /> <br />
